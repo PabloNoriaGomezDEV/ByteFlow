@@ -12,12 +12,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f9e547;
+    background-color: #F8F271;
     padding: 10px 30px;
 }
 
 .logo img {
-    height: 50px; /* Ajusta este tamaño según el logo */
+    height: 40px; 
 }
 
 nav ul {
@@ -36,7 +36,7 @@ nav a {
     border: 2px solid black;
     padding: 5px 15px;
     border-radius: 20px;
-    background-color: #f9e547;
+    background-color: #FFEA2B;
     font-weight: bold;
 }
 
@@ -45,7 +45,7 @@ section.hero {
     align-items: center;
     justify-content: space-between;
     background-color: #bfbfbf;
-    height: calc(100vh - 80px); /* Assuming header height of 80px */
+    height: 65vh;
     padding: 0 30px;
 }
 
@@ -64,22 +64,22 @@ section.hero {
 }
 
 .left {
-    border-width: 120px 200px 120px 0;
+    border-width: 200px 340px 200px 0;
     border-color: transparent #BCB85D transparent transparent;
 }
 
 .medium {
-    border-width: 120px 200px 120px 0;
+    border-width: 200px 340px 200px 0;
     border-color: transparent #D9D463 transparent transparent;
     position: absolute;
-    left: -30px;
+    left: -60px;
 }
 
 .right {
-    border-width: 120px 200px 120px 0;
+    border-width: 200px 340px 200px 0;
     border-color: transparent #F8F271 transparent transparent;
     position: absolute;
-    left: -60px;
+    left: -120px;
 }
 
 .hero-text {
