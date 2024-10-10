@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9e547;
+    padding: 10px 30px;
+}
+
+.logo img {
+    height: 50px; /* Ajusta este tamaño según el logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.contact-button-j {
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #f9e547;
+    font-weight: bold;
+}
+
+section.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bfbfbf;
+    height: calc(100vh - 80px); /* Assuming header height of 80px */
+    padding: 0 30px;
+}
+
+.triangle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.left {
+    border-width: 120px 200px 120px 0;
+    border-color: transparent #BCB85D transparent transparent;
+}
+
+.medium {
+    border-width: 120px 200px 120px 0;
+    border-color: transparent #D9D463 transparent transparent;
+    position: absolute;
+    left: -30px;
+}
+
+.right {
+    border-width: 120px 200px 120px 0;
+    border-color: transparent #F8F271 transparent transparent;
+    position: absolute;
+    left: -60px;
+}
+
+.hero-text {
+    text-align: right;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    color: black;
+}
