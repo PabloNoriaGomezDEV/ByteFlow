@@ -30,7 +30,8 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10vh;
+    padding-right: 7vh;
 }
 
 nav a {
@@ -39,12 +40,23 @@ nav a {
     font-size: 1.2rem;
 }
 
-.contact-button-j {
+.contact-button-j{
     border: 2px solid black;
     padding: 5px 15px;
     border-radius: 20px;
-    background-color: #FFEA2B;
+    background-color: black;
+    color: #FFF500;
     font-weight: bold;
+    transition: 0.5s;
+}
+.contact-button-j:hover {
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #FFF500;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
 }
 
 section.hero {
@@ -52,8 +64,8 @@ section.hero {
     align-items: center;
     justify-content: space-between;
     background-color: #bfbfbf;
-    height: 65vh;
-    padding: 0 30px;
+    height: 67vh;
+    padding: 0 60px;
 }
 
 .triangle-container {
@@ -62,6 +74,7 @@ section.hero {
     justify-content: center;
     position: relative;
     transform: rotate(180deg);
+    
 }
 
 .triangle {
@@ -87,6 +100,10 @@ section.hero {
     border-color: transparent #F8F271 transparent transparent;
     position: absolute;
     left: -120px;
+}
+.byte{
+    position: absolute;
+    transform: rotate(180deg);
 }
 
 .hero-text {
