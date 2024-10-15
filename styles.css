@@ -51,13 +51,23 @@ footer::before {
     z-index: 1; /* Asegura que el contenido esté por encima del triángulo */
 }
 
-/* Estilo para la imagen del perfil */
 .r-profile-image {
     width: 150px;
     height: 150px;
     background-color: #C4C4C4; /* Color gris de los círculos */
     border-radius: 50%;
     margin-bottom: 10px;
+    transition: all 0.5s; /* Aplicamos la transición al estado base */
+    border: 2px solid black;
+}
+
+.r-profile-image:hover {
+    width: 175px;
+    height: 175px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: all 0.5s;
     border: 2px solid black;
 }
 
