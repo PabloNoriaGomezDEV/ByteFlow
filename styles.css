@@ -11,6 +11,7 @@ body {
 
 header {
     display: flex;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
     background-color: #F8F271;
@@ -23,8 +24,16 @@ header {
     width: 100%;
 }
 
+
 .logo img {
-    height: 40px; 
+    height: 40px;
+    width: 280px;
+    transition: 0.2s;
+}
+.logo img:hover {
+    height: 43px;
+    width: 300px;
+    transition: 0.2s;
 }
 
 nav ul {
@@ -38,6 +47,14 @@ nav a {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+    transition: 0.5s;
+}
+nav a:hover {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    text-shadow: 1.5px 1.5px 3.25px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
 }
 
 .contact-button-j{
