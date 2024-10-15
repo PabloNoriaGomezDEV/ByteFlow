@@ -34,12 +34,12 @@ At <strong>ByteFlow</strong>, we transform your ideas into digital realities, he
 
 <h1>Screenshoots 📸</h1>
 
-<p align="center"><image src="https://github.com/user-attachments/assets/0d73a06b-2c40-49ea-bf74-af4970977f08" width=600></p>
+<p align="center"><image src="https://github.com/user-attachments/assets/0d73a06b-2c40-49ea-bf74-af4970977f08" width=500></p>
   
-<p align="center"><image src="https://github.com/user-attachments/assets/c96db3dd-5910-43ce-be7d-fca669b1fcd2"></p>
-<p align="center"><image src="https://github.com/user-attachments/assets/94af4abd-4c62-4145-87c3-6c600f12d332"></p>
+<p align="center"><image src="https://github.com/user-attachments/assets/c96db3dd-5910-43ce-be7d-fca669b1fcd2" width=500></p>
+<p align="center"><image src="https://github.com/user-attachments/assets/94af4abd-4c62-4145-87c3-6c600f12d332" width=500></p>
 
-<p align="center"><image src="https://github.com/user-attachments/assets/22434ed3-6dea-4764-8789-d87b3971b2d0"></p>
+<p align="center"><image src="https://github.com/user-attachments/assets/22434ed3-6dea-4764-8789-d87b3971b2d0" width=500 height=750></p>
 
 <h1>Stacks 🔧</h1>
 
