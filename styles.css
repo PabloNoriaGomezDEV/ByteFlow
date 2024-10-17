@@ -3,13 +3,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Chivo', sans-serif; font-weight: bold;
     background-color: #C4C4C4;
-}
-
-/* Contenedor del contenido principal */
-.r-content {
-    min-height: calc(100vh - 434px); /* Dejar espacio para el footer */
 }
 
 /* Footer sticky */
@@ -21,7 +16,6 @@ footer {
     height: 434px;
     background-color: #F8F271; /* Fondo amarillo */
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
 }
@@ -34,45 +28,65 @@ footer::before {
     left: 0;
     width: 0;
     height: 0;
+    z-index: -1;
     border-left: 50vw solid transparent; /* Mitad del viewport para cada lado */
     border-right: 50vw solid transparent;
     border-top: 434px solid #C4C4C4; /* Triángulo invertido con color gris */
-    z-index: 0; /* Asegura que el triángulo esté detrás del contenido */
 }
 
-/* Estilos para cada perfil */
-.r-profile {
+.p-follow {
+    max-width: 300px;
     text-align: center;
+    float: right;
+}
+
+.p-follow a{
+    margin-right: 10px;
+    text-decoration: none;
+}
+.p-follow img{
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.p-logo {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center;     /* Centra el contenido horizontalmente */
-    line-height: 0px;
-    z-index: 1; /* Asegura que el contenido esté por encima del triángulo */
+    align-items: center;
 }
 
-.r-profile-image {
-    width: 150px;
-    height: 150px;
-    background-color: #C4C4C4; /* Color gris de los círculos */
-    border-radius: 50%;
-    margin-bottom: 10px;
-    transition: all 0.5s; /* Aplicamos la transición al estado base */
-    border: 2px solid black;
+.p-logo1 img {
+    width: 200px;
+    height: 200px;
 }
 
-.r-profile-image:hover {
-    width: 175px;
-    height: 175px;
-    background-color: #C4C4C4;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    transition: all 0.5s;
-    border: 2px solid black;
+.p-logo img {
+    margin-right: 10px;
+    width: 300px;
+    height: 40px;
 }
 
-.r_linkedinicon {
-    width: 40px;
-    padding-top: 10px;
-    z-index: 1;
-}
+.p-terminos {
+    font-size: 12px;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .p-info {
+    display: flex; 
+    align-items: center; 
+    position: absolute;
+  }
+
+  .p-info p {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .p-info img {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
