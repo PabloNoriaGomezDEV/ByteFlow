@@ -11,36 +11,33 @@
 <body>
     <div class="profile-icons">
         <div class="r-profile">
-            <a href=""><img src="ruben_foto.webp" alt="" class="r-profile-image"></a>
+            <a class="profile-link" data-target="ruben"><img src="images/ruben_foto.webp" alt="" class="r-profile-image"></a>
             <h3>Ruben Martin</h3>
             <p>Especialista en Desarrollo web</p>
         </div>
         <div class="r-profile">
-            <a href=""><img src="jairo_foto.webp" alt="" class="r-profile-image"></a>
+            <a class="profile-link" data-target="jairo"><img src="images/jairo_foto.webp" alt="" class="r-profile-image"></a>
             <h3>Jairo Alexandro</h3>
             <p>Especialista en Desarrollo web</p>
         </div>
         <div class="r-profile">
-            <a href=""><img src="pablo_foto.webp" alt="" class="r-profile-image"></a>
+            <a class="profile-link" data-target="pablo"><img src="images/pablo_foto.webp" alt="" class="r-profile-image"></a>
             <h3>Pablo Noria</h3>
             <p>Especialista en Desarrollo web</p>
-
         </div>
         <div class="r-profile">
-            <a href=""><img src="adrian_foto.webp" alt="" class="r-profile-image"></a>
+            <a class="profile-link" data-target="adrian"><img src="images/adrian_foto.webp" alt="" class="r-profile-image"></a>
             <h3>Adrian Perez</h3>
             <p>Especialista en Desarrollo web</p>
-
         </div>
         <div class="r-profile">
-            <a href=""><img src="fernando_foto.webp" alt="" class="r-profile-image"></a>
+            <a class="profile-link" data-target="fernando"><img src="images/fernando_foto.webp" alt="" class="r-profile-image"></a>
             <h3>Fernando de la Torre</h3>
             <p>Especialista en Desarrollo web</p>
-
         </div>
     </div>
 
-    <section class="right-triangle-section">
+    <section class="right-triangle-section" id="ruben">
         <div class="right-non-triangle-section">
             <h3 class="r-text1-section">Ruben</h3>
             <h3 class="r-text2-section">Martin</h3>
@@ -62,19 +59,19 @@
                 <div class="r-triangle r-yellow r-medium"></div>
                 <div class="r-triangle r-yellow r-right"></div>
                 <div class="r-section-image">
-                    <img src="ruben_foto.webp" alt="ByteFlow" class="r-image">
+                    <img src="images/ruben_foto.webp" alt="ByteFlow" class="r-image">
                 </div>
             </div>
         </div>
     </section>
-    <section class="left-triangle-section">
+    <section class="left-triangle-section" id="jairo">
         <div class="l-triangulos">
             <div class="l-triangle-container">
                 <div class="l-triangle l-yellow l-left"></div>
                 <div class="l-triangle l-yellow l-medium"></div>
                 <div class="l-triangle l-yellow l-right"></div>
                 <div class="l-section-image">
-                    <img src="jairo_foto.webp" alt="ByteFlow" class="r-image">
+                    <img src="images/jairo_foto.webp" alt="ByteFlow" class="r-image">
                 </div>
             </div>
         </div>
@@ -94,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section class="right-triangle-section">
+    <section class="right-triangle-section" id="pablo">
         <div class="right-non-triangle-section">
             <h3 class="r-text1-section">Pablo</h3>
             <h3 class="r-text2-section">Noria</h3>
@@ -116,7 +113,7 @@
                 <div class="r-triangle r-yellow r-medium"></div>
                 <div class="r-triangle r-yellow r-right"></div>
                 <div class="r-section-image">
-                    <img src="pablo_foto.webp" alt="ByteFlow" class="r-image">
+                    <img src="images/pablo_foto.webp" alt="ByteFlow" class="r-image">
                 </div>
             </div>
         </div>
@@ -128,11 +125,11 @@
                 <div class="l-triangle l-yellow l-medium"></div>
                 <div class="l-triangle l-yellow l-right"></div>
                 <div class="l-section-image">
-                    <img src="adrian_foto.webp" alt="ByteFlow" class="r-image">
+                    <img src="images/adrian_foto.webp" alt="ByteFlow" class="r-image">
                 </div>
             </div>
         </div>
-        <div class="left-non-triangle-section">
+        <div class="left-non-triangle-section" id="adrian">
             <h3 class="r-text1-section">Adrian</h3>
             <h3 class="r-text2-section">Perez</h3>
             <h4 class="r-text3-section">Especialistas en desarrollo web</h4>
@@ -148,7 +145,7 @@
             </div>
         </div>
     </section>
-    <section class="right-triangle-section">
+    <section class="right-triangle-section" id="fernando">
         <div class="right-non-triangle-section">
             <h3 class="r-text1-section">Fernando</h3>
             <h3 class="r-text2-section">de la Torre</h3>
@@ -170,10 +167,21 @@
                 <div class="r-triangle r-yellow r-medium"></div>
                 <div class="r-triangle r-yellow r-right"></div>
                 <div class="r-section-image">
-                    <img src="fernando_foto.webp" alt="ByteFlow" class="r-image">
+                    <img src="images/fernando_foto.webp" alt="ByteFlow" class="r-image">
                 </div>
             </div>
         </div>
     </section>
+
+
+    <script>
+        document.querySelectorAll('.profile-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();  // Evita el comportamiento por defecto del enlace
+                const targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 </html>
