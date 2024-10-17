@@ -1,9 +1,10 @@
-/* Hacer que el cuerpo ocupe todo el espacio disponible */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Chivo', sans-serif; font-weight: bold;
+    font-family: "Chivo", sans-serif;
     background-color: #C4C4C4;
 }
 
@@ -16,6 +17,7 @@ footer {
     height: 434px;
     background-color: #F8F271; /* Fondo amarillo */
     display: flex;
+    justify-content: space-between; /* Alineación entre los elementos */
     align-items: center;
     overflow: hidden;
 }
@@ -28,65 +30,41 @@ footer::before {
     left: 0;
     width: 0;
     height: 0;
-    z-index: -1;
     border-left: 50vw solid transparent; /* Mitad del viewport para cada lado */
     border-right: 50vw solid transparent;
     border-top: 434px solid #C4C4C4; /* Triángulo invertido con color gris */
+    z-index: 0; /* Asegura que el triángulo esté detrás del contenido */
 }
 
-.p-follow {
-    max-width: 300px;
+.siguenos {
+    z-index: 1;
+    margin-right: auto; /* Coloca .siguenos a la derecha */
     text-align: center;
-    float: right;
+    padding-left: 30px;
 }
 
-.p-follow a{
-    margin-right: 10px;
-    text-decoration: none;
-}
-.p-follow img{
-    margin-right: 5px;
-    width: 50px;
-    height: 50px;
+
+.r-icon {
+    size: 24px;
 }
 
-.p-logo {
-    display: flex;
-    align-items: center;
-}
-
-.p-logo1 img {
-    width: 200px;
-    height: 200px;
-}
-
-.p-logo img {
-    margin-right: 10px;
-    width: 300px;
-    height: 40px;
-}
-
-.p-terminos {
-    font-size: 12px;
-    text-align: center;
-    line-height: 3;
-  }
-
-  .p-info {
-    display: flex; 
-    align-items: center; 
+.r-logo {
     position: absolute;
-  }
-
-  .p-info p {
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 12px;
-  }
-
-  .p-info img {
-    margin-right: 5px;
-    width: 30px;
-    height: 30px;
+    left: 50%;
+    transform: translateX(-50%); /* Centrar horizontalmente la imagen */
+    z-index: 1; /* Asegurar que esté encima del triángulo */
     text-align: center;
-  }
+    line-height: 50px;
+}
+.r-izquierda
+{
+    z-index: 1;
+    margin-left: auto; /* Coloca .siguenos a la derecha */
+    text-align: right;
+    max-width: 266px;
+    font-size: 20;
+}
+a,a:visited,a:link,a:hover{
+    text-decoration: none;
+    color: black;
+}
