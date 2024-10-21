@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Chivo", sans-serif;
+    padding-top: 64px;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F271;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: 1000;
+    width: 100%;
+}
+
+
+.logo img {
+    height: 40px;
+    width: 280px;
+    transition: 0.2s;
+}
+.logo img:hover {
+    height: 43px;
+    width: 300px;
+    transition: 0.2s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10vh;
+    padding-right: 7vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+nav a:hover {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    text-shadow: 1.5px 1.5px 3.25px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.contact-button-j{
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: black;
+    color: #FFF500;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.contact-button-j:hover {
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #FFF500;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+section.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 67vh;
+    padding: 0 60px;
+}
+
+.triangle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: rotate(180deg);
+    
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.left {
+    border-width: 200px 340px 200px 0;
+    border-color: transparent #BCB85D transparent transparent;
+}
+
+.medium {
+    border-width: 200px 340px 200px 0;
+    border-color: transparent #D9D463 transparent transparent;
+    position: absolute;
+    left: -60px;
+}
+
+.right {
+    border-width: 200px 340px 200px 0;
+    border-color: transparent #F8F271 transparent transparent;
+    position: absolute;
+    left: -120px;
+}
+.byte{
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.hero-text {
+    text-align: left;
+    width: 120vh;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.consul{
+    height: 5.4vh;
+}
+.tecno {
+    padding-left: 18vh;
+    
+}
+
+.consulSomos{
+    height: 5.4vh;
+    padding-left: 3vh;
+    padding-inline: 20vh;
+}
+.tecnoSomos {
+    padding-left: 18vh;
+    padding-left: 3vh;
+    padding-inline: 40vh;
+    
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: black;
+    padding-top: 5vh;
+    padding-left: 3vh;
+    padding-inline: 0vh;
+}
