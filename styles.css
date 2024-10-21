@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure body takes at least the full viewport height */
+    padding-bottom: 434px; /* Prevent content from overlapping with the footer */
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     height: 80px;
@@ -68,7 +76,6 @@ section.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #bfbfbf;
     height: 67vh;
     padding: 0 60px;
 }
@@ -142,7 +149,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: "Chivo", sans-serif;
-    background-color: #C4C4C4;
+    background-color: #bfbfbf;
 
 }
 
@@ -362,4 +369,78 @@ html, body {
 
 .l-section-image {
     position: absolute;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Chivo", sans-serif;
+    background-color: #C4C4C4;
+}
+
+/* Footer sticky */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 434px;
+    background-color: #F8F271; /* Yellow background */
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center;
+    overflow: hidden;
+    z-index: 100; /* Ensure the footer stays on top of other content */
+}
+
+/* Triángulo invertido */
+footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent; /* Mitad del viewport para cada lado */
+    border-right: 50vw solid transparent;
+    border-top: 434px solid #C4C4C4; /* Triángulo invertido con color gris */
+    z-index: 0; /* Asegura que el triángulo esté detrás del contenido */
+}
+
+.siguenos {
+    z-index: 1;
+    margin-right: auto; /* Coloca .siguenos a la derecha */
+    text-align: center;
+    padding-left: 30px;
+}
+
+
+.r-icon {
+    size: 24px;
+}
+
+.r-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centrar horizontalmente la imagen */
+    z-index: 1; /* Asegurar que esté encima del triángulo */
+    text-align: center;
+    line-height: 50px;
+}
+.r-izquierda
+{
+    z-index: 1;
+    margin-left: auto; /* Coloca .siguenos a la derecha */
+    text-align: right;
+    max-width: 266px;
+    font-size: 20;
+}
+
+.siguenos a {
+    color: black;
+  }
+.links-varios a{
+    text-decoration: none;
+    color: black;
 }
