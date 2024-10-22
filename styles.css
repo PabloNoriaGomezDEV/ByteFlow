@@ -76,7 +76,7 @@ section.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 67vh;
+    height: 100vh;
     padding: 0 60px;
 }
 
@@ -121,6 +121,7 @@ section.hero {
 .hero-text {
     text-align: left;
     width: 120vh;
+    padding-left: 45vh;
 }
 
 .hero-text h2 {
@@ -130,7 +131,7 @@ section.hero {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .consul{
-    height: 5.4vh;
+    height: 1vh;
 }
 .tecno {
     padding-left: 18vh;
@@ -140,6 +141,7 @@ section.hero {
     font-size: 20px;
     color: black;
     padding-left: 10vh;
+    line-height: 0px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
