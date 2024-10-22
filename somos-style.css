@@ -121,12 +121,12 @@ section.hero {
     transform: rotate(180deg);
 }
 
-.hero-text {
+.hero-text-n {
     text-align: left;
     width: 120vh;
 }
 
-.hero-text h2 {
+.hero-text-n h2 {
     font-size: 3rem;
     color: black;
     font-weight: bold;
@@ -152,10 +152,19 @@ section.hero {
     
 }
 
-.hero-text p {
+.hero-text-n p {
     font-size: 20px;
     color: black;
     padding-top: 5vh;
     padding-left: 3vh;
     padding-inline: 0vh;
+}
+
+.hero-text-n{
+    
+    text-align: left;
+    width: 120vh;
+    padding-left: 20vh;
+    font-family: "Chivo", sans-serif;
+
 }
