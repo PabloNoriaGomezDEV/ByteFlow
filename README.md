@@ -43,7 +43,7 @@ At <strong>ByteFlow</strong>, we transform your ideas into digital realities, he
 
 <h1>Stacks 🔧</h1>
 
-<p>For this project we have used HTML5 and CSS3.</p>
+<p>For this project we have used HTML5, CSS3 and JavaScript</p>
 
 <h1>Methodology 👾</h1>
 
